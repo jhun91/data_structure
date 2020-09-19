@@ -6,7 +6,7 @@ fun main() {
     //}
     //linkedList1.desc()
 
-    val linkedList2 = NodeMgmt(0)
+    val linkedList2 = NodeMgmt02(0)
 //    linkedList2.desc()
 //
 //    println(linkedList2.head)
@@ -33,7 +33,7 @@ class Node02(
 )
 
 
-class NodeMgmt(
+class NodeMgmt02(
     private val data: Any,
     private var head: Node02? = Node02(data)
 ) {
