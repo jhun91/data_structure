@@ -1,4 +1,4 @@
-var head: Node = Node(1)    // 헤드 노드 생성
+var head01: Node01 = Node01(1)    // 헤드 노드 생성
 
 fun main() {
 
@@ -7,7 +7,7 @@ fun main() {
         add(index)
     }
 
-    var node = head
+    var node = head01
     while (node.next != null) {
         println(node.data)
         node = node.next!!
@@ -17,15 +17,15 @@ fun main() {
 
 //헤드 노드부터 시작해서 데이터와 주소정보를 세팅한다.
 fun add(data: Any) {
-    var node = head
+    var node = head01
     while (node.next != null) {
         node = node.next!!
     }
-    node.next = Node(data)
+    node.next = Node01(data)
 }
 
 //노드 클래스 생성
-class Node(
+class Node01(
     val data: Any,
-    var next: Node? = null  //다음 노드의 주소값이 들어가야 한다.
+    var next: Node01? = null  //다음 노드의 주소값이 들어가야 한다.
 )
