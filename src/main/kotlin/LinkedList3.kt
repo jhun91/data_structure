@@ -3,9 +3,9 @@ fun main() {
 }
 
 class Node03(
-    val data: Any,
-    val prev: Node03? = null,
-    val next: Node03? = null
+    val data: Any?,
+    var prev: Node03? = null,
+    var next: Node03? = null
 )
 
 class NodeMgmt03(
@@ -14,7 +14,7 @@ class NodeMgmt03(
     private var tail: Node03? = head
 ) {
 
-    fun insert(data: Any) {
+    fun insert(data: Node03) {
         if (head == null) {
             head = Node03(data)
             tail = head
@@ -25,6 +25,11 @@ class NodeMgmt03(
                 node = node.next //노드의 끝 찾기
             }
 
+            var new = data //새로운 노드 데이터
+            node.next = new
+            new.prev = node
+
+            tail = new
 
         }
     }
