@@ -26,7 +26,7 @@ class NodeMgmt03(
             }
 
             var new = data //새로운 노드 데이터
-            node.next = new
+            node?.next = new
             new.prev = node
 
             tail = new
