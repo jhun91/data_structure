@@ -1,5 +1,4 @@
 fun main() {
 
-    var total: Int = 0
-
+    //BigO 실습 예정
 }
