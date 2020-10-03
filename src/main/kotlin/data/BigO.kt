@@ -1,3 +1,5 @@
+package data
+
 fun main() {
 
     println(sumAll(100))

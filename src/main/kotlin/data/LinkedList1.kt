@@ -1,3 +1,5 @@
+package data
+
 var head01: Node01 = Node01(1)    // 헤드 노드 생성
 
 fun main() {

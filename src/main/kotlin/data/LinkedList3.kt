@@ -1,3 +1,5 @@
+package data
+
 fun main() {
 
     val doubleLinkedList = NodeMgmt03(0)

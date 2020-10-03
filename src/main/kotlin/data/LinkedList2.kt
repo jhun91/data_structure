@@ -1,8 +1,10 @@
+package data
+
 fun main() {
-    //val linkedList1 = NodeMgmt(0)
+    //val linkedList1 = data.NodeMgmt(0)
 
     //for (i in 1 until 10) {
-     //   linkedList1.add(i)
+     //   linkedList1.data.add(i)
     //}
     //linkedList1.desc()
 

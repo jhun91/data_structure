@@ -1,8 +1,10 @@
+package data
+
 import java.util.*
 
 fun main() {
     //재귀호출 함수 실습
-    //recursive(4)
+    //data.recursive(4)
 
     val stack: Stack<Any> = Stack()
     stack.push(1)
